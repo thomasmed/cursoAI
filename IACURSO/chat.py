@@ -52,12 +52,14 @@ def inicializar_estado():
 #FUNCION PARA INSTANCIAR LA PAGINA
 def configurar_pagina():
     #CAMBIAR NOMBRE DE PESTAÑA
-    st.set_page_config("Mi chat AI")
+    st.set_page_config("Chat MARCIAN0 - An advanced AI")
     #AGREGAMOS UN TITULO
-    st.title("Mi super chat bot")
+    st.title("👽 Chat MARCIAN0 👽")
     #AGREGAR SIDEBAR
     st.sidebar.title("Sidebar de modelos")
     m = st.sidebar.selectbox("Modelos", modelos, index = 0)
+    st.sidebar.title('¿Qué es "Chat MARCIAN0"?')
+    m = st.sidebar.write("Chat MARCIAN0 es una inteligencia artificial avanzada que integra conocimientos globales a partir de una base de datos muy compleja. Para iniciar una conversación tan solo escribe en la zona de texto algún mensaje y la IA te va a responder de inmediato.")
     return m
 
 #BLOQUE DE EJECUCION
